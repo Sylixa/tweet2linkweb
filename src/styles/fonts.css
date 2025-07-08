@@ -1,0 +1,15 @@
+/* fonts.css */
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local(''),
+		url('/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+	font-display: swap;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
