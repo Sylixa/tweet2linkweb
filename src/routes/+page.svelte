@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../styles/fonts.css';
 	import '../styles/color.css';
+	import '../styles/app.css';
+	import VideoPlayer from '../component/VideoPlayer.svelte';
 	import { reconstructPost } from '$lib/reconstructPost';
 	import { extractKey } from '$lib/extractField';
 	import { getPostData } from '$lib/externalAPI';
@@ -61,7 +63,7 @@
 				bind:value={userInput}
 			/>
 		</div>
-		<button type="submit">Submit Form</button>
+		<button class="button-c" type="submit">Submit Form</button>
 	</form>
 
 	{#if !isEmpty(tweet)}
@@ -110,7 +112,7 @@
 			</div>
 		{:else}
 			<div class="media-container">
-				<video src={media.url} controls><track kind="captions" /></video>
+				<VideoPlayer src={media.url} />
 				<a class="media-url" href={media.url}> Download</a>
 			</div>
 		{/if}

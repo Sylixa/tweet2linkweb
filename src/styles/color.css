@@ -26,7 +26,7 @@ body {
 	background-color: var(--chocolate-4);
 }
 
-button {
+.button-c {
 	display: flex;
 	position: relative;
 	font-family: 'Roboto';
